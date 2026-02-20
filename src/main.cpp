@@ -24,15 +24,15 @@ void setup() {
 
 void loop() {
 
-    // TODO 6:
-    // Read digital value from touch sensor
+    int state = digitalRead(buttonPin);
 
-    // TODO 7:
-    // If touch detected (HIGH)
-    //     Print "Touch Detected"
-    // Else
-    //     Print "No Touch"
+    if (state == HIGH) {
+        digitalWrite(ledPin, HIGH);
+        Serial.println("Touched");
+    } else {
+        digitalWrite(ledPin, LOW);
+        Serial.println("Not Touched");
+    }
 
-    // TODO 8:
-    // Add small delay (200–500ms)
+    delay(300);
 }
