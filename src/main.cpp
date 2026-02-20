@@ -10,11 +10,8 @@
  * and displays structured output via Serial Monitor.
  */
 
- // TODO 1:
- // Define touch sensor digital pin (Use pin 2)
-
- // TODO 2:
- // Create variable to store touch state
+int buttonPin = 7;
+int ledPin = 13;
 
 void setup() {
 
